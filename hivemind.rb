@@ -5,13 +5,13 @@
 class Hivemind < Formula
   desc "Hivemind - A TUI-based agent-driven IDE for managing multiple AI agents"
   homepage "https://github.com/ByteMirror/hivemind"
-  version "0.2.1"
+  version "0.2.2"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ByteMirror/hivemind/releases/download/v0.2.1/hivemind_0.2.1_darwin_amd64.tar.gz"
-      sha256 "03a760c80e08efdba661441574900ac25ec94c93b4dc3e68f17199d716cc8932"
+      url "https://github.com/ByteMirror/hivemind/releases/download/v0.2.2/hivemind_0.2.2_darwin_amd64.tar.gz"
+      sha256 "98287a80d68841344449f63d92de9711e66201019bfd3c89573a8daa8fa59693"
 
       define_method(:install) do
         bin.install "hivemind"
@@ -19,8 +19,8 @@ class Hivemind < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ByteMirror/hivemind/releases/download/v0.2.1/hivemind_0.2.1_darwin_arm64.tar.gz"
-      sha256 "4f9ae2ddc63fac1d9f2d8fccd97798dadb591a4ac470791152c60a047a229212"
+      url "https://github.com/ByteMirror/hivemind/releases/download/v0.2.2/hivemind_0.2.2_darwin_arm64.tar.gz"
+      sha256 "0d4e16da876801668b3edf2d269961d8c4b9c9ba82b94ce98bffcbe1c0c25c04"
 
       define_method(:install) do
         bin.install "hivemind"
@@ -31,16 +31,16 @@ class Hivemind < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ByteMirror/hivemind/releases/download/v0.2.1/hivemind_0.2.1_linux_amd64.tar.gz"
-      sha256 "11fe246e5ac66721469a4ed7103063af725cc04c3848c2bead02e29647228fe6"
+      url "https://github.com/ByteMirror/hivemind/releases/download/v0.2.2/hivemind_0.2.2_linux_amd64.tar.gz"
+      sha256 "74974db01af0e12143367618a74d1d4610dfc24c3ac4cbb46e03d64ae474d0bd"
       define_method(:install) do
         bin.install "hivemind"
         bin.install "hivemind-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ByteMirror/hivemind/releases/download/v0.2.1/hivemind_0.2.1_linux_arm64.tar.gz"
-      sha256 "88daf6e951b2ab6a20ffeafba4a2177fe7528eeb64d5ac134dafbeccbc905703"
+      url "https://github.com/ByteMirror/hivemind/releases/download/v0.2.2/hivemind_0.2.2_linux_arm64.tar.gz"
+      sha256 "8a5e5a533b19a7314cd6bb6b885b59d4d8f9c50e196631cdc27d47f5a9ac59b8"
       define_method(:install) do
         bin.install "hivemind"
         bin.install "hivemind-mcp"
