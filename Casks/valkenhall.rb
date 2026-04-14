@@ -1,6 +1,6 @@
 cask "valkenhall" do
-  version "0.4.0"
-  sha256 "ce58beb162e56d8350a4289983d3c2d5f91da572a2593ed42fa22a189a6e4b3c"
+  version "0.8.0"
+  sha256 "038b5fe511d6aef53dbd32fa3dde66cb9643657832e19b5d488716fa71d83f92"
 
   url "https://github.com/ByteMirror/valkenhall/releases/download/v#{version}/stable-macos-arm64-Valkenhall.dmg"
   name "Valkenhall"
@@ -16,11 +16,11 @@ cask "valkenhall" do
                    args: ["-cr", "#{appdir}/Valkenhall.app"]
   end
 
-  uninstall quit: "dev.fabianurbanek.valkenhall"
+  uninstall quit: "com.valkenhall.app"
 
   zap trash: [
-    "~/Library/Application Support/dev.fabianurbanek.valkenhall",
-    "~/Library/Caches/dev.fabianurbanek.valkenhall",
-    "~/Library/Preferences/dev.fabianurbanek.valkenhall.plist",
+    "~/Library/Application Support/com.valkenhall.app",
+    "~/Library/Caches/com.valkenhall.app",
+    "~/Library/Preferences/com.valkenhall.app.plist",
   ]
 end
