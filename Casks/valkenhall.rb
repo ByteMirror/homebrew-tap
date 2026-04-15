@@ -1,6 +1,6 @@
 cask "valkenhall" do
   version "0.9.1"
-  sha256 "759db391e27d33f256ba08d7b89df5ce78f9b603b62316aaa475396fa03d0a0a"
+  sha256 "c57e336eedd81e7bba2bf6a6d4d90e75fc128010f8dff79be6ca1f5eda49dde4"
 
   url "https://github.com/ByteMirror/valkenhall/releases/download/v#{version}/stable-macos-arm64-Valkenhall.dmg"
   name "Valkenhall"
