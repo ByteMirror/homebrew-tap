@@ -1,8 +1,8 @@
 cask "valkenhall" do
-  version "0.15.0"
-  sha256 "4f9b051c5260edf46871292d5967c990d0a8b7962fb0e8ba0e6dc4b46830151b"
+  version "0.15.1"
+  sha256 "51c219ef62d5f250aa818d506c37404f11259539089461dc281d31287b37557d"
 
-  url "https://github.com/ByteMirror/valkenhall/releases/download/v#{version}/Valkenhall-0.15.0-arm64.dmg"
+  url "https://github.com/ByteMirror/valkenhall/releases/download/v#{version}/Valkenhall-0.15.1-arm64.dmg"
   name "Valkenhall"
   desc "Desktop card game arena for Sorcery TCG"
   homepage "https://github.com/ByteMirror/valkenhall"
